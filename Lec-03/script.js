@@ -1,0 +1,1 @@
+alert("Warning! 18+ Content here.")
