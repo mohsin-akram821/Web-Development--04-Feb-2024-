@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is initial form making website.">
+    <title>Forms in HTML - - MOHSIN's SIGMA WEB COURSE.</title>
+</head>
+
+<body>
+    <h1>Basic FORM for user basic information gathering.</h1>
+    <form action="post">
+        <div>
+            <label for="name">Enter Username </label>
+            <input type="text" id="name" name="Username" placeholder="Enter your username" required>
+
+        </div>
+
+        <div>
+            <br>
+            <label for="Gender">Select your Gender </label>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+        </div>
+
+        <div>
+            <br>
+            <br>
+            <label for="checkbox">Select the Checkboxes that you liked </label>
+            <br>
+            <input type="checkbox" name="Subscribe" id="Subscribe" value="Yes">
+            <label for="Subscribe">Subscribe Newletter</label>
+            <br>
+            <input type="checkbox" name="Agreed" id="Agreed" value="Yes">
+            <label for="Agreed">Agreed Term and Conditions</label>
+        </div>
+
+        <div>
+            <br>
+            <label for="Comments">Enter your Comments Here</label>
+            <br>
+            <textarea name="Comments Section" id="Comments" cols="30" rows="10"
+                placeholder="Enter your Comments here"></textarea>
+        </div>
+
+        <div>
+            <br>
+            <label for="Year">Select Your Graduation Year</label>
+            <select name="Year of Graduation" id="Year">
+                <option value="NILL">Select Option</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
