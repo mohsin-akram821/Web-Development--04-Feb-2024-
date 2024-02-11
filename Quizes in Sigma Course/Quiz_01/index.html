@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ_01 of SIGMA WEB Development</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <h1>Hello! Here is the Quiz_01 of Sigma Web Development Course. Let's get started.</h1>
+    <h1>USER INFORMATION FORM</h1>
+    <form action="post">
+        <div>
+            <label for="name">Enter Username Please </label>
+            <input type="text" id="name" name="Username" placeholder="Enter Username Here">
+        </div>
+
+        <div>
+            <label for="city">Please select your city</label>
+            <select name="city" id="city">
+                <option value="NILL">Select</option>
+                <option value="city">Lahore</option>
+                <option value="city">Karachi</option>
+                <option value="city">Peshawar</option>
+                <option value="city">Sargodha</option>
+                <option value="city">Pakpatan</option>
+                <option value="city">Kasur</option>
+                <option value="city">Sheikhupura</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="PIN">Enter your city PIN code </label>
+            <input type="text" name="pin" id="PIN" placeholder="Enter PIN code">
+        </div>
+
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+
+</html>
