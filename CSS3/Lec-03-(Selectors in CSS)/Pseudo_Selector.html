@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        /* Pseudo Selector */
+        a:visited{
+            color: brown;
+        }
+
+        a:link{
+            color: aquamarine;
+        }
+
+        a:active{
+            background-color: chartreuse;
+        }
+
+        a:hover{
+
+            background-color: yellowgreen;
+        }
+
+       p:first-child{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Selector</h1>
+    <div>
+        This is div and I want to use the pseudo selector.
+
+        <article>
+            <p>
+                This is paragraph in the article tag and google link is here:
+                <a href="https://www.google.com">Go to Google</a>
+                <br>
+                <a href="https://www.youtube.com">Go to youtube</a>
+            </p>
+        </article>
+    </div>
+</body>
+</html>

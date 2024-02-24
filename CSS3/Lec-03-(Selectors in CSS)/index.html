@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: aquamarine;
+        }
+
+        /* Id Selector */
+        #green{
+            color: yellowgreen;
+        }
+
+        /* Class Selector */
+        .red{
+            background-color: cadetblue;
+        }
+
+        /* Child Selector */
+        div > p{
+            background-color: blueviolet;
+        }
+
+        /* Descendent Selector */
+        div p{
+            color: rgb(255, 0, 60);
+        }
+
+        /* Universal Selector */
+        *{
+            padding: 0%;
+            margin-left: 0%;
+        }
+
+        /* Pseudo Selector */
+        
+
+    </style>
+</head>
+<body>
+    <h1>Selectors in CSS</h1>
+    <p>
+        There are many types of the selectors in the CSS. Some of the selectors are mentioned here.
+        <ol>
+            <li>Element Selector</li>
+            <li>Id Selector</li>
+            <li>Class Selector</li>
+            <li>Child Selector</li>
+            <li>Decendent Selector</li>
+            <li>Universal Selector</li>
+            <li>Pseudo Selector</li>
+        </ol>
+    </p>
+
+    <div>
+        Element Selector is here.
+    </div>
+
+    <div>
+        <p>
+            This is Child selector.
+        </p>
+        
+        <article>
+        <p>
+            Hello guys I am not a child Selector.
+        </p>
+    </article>
+    </div>
+
+    <span id="green">
+        ID selector goes here.
+    </span>
+
+    <div class="red">
+        Class Selector goes here.
+    </div>
+</body>
+</html>
