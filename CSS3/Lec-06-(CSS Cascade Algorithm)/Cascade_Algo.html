@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Algorithm in CSS3</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            background-color: yellowgreen;
+        }
+
+        .yellow{
+            background-color: blueviolet;
+        }
+
+        .blue{
+            background-color: rgb(217, 10, 217);
+        }
+
+        
+        .red{
+            background-color: aquamarine;
+        }
+
+        li p{
+            text-align: center;
+            font-weight: bolder;
+            
+        }
+
+        /* p.red.yellow{
+            background-color: rgb(10, 91, 91);
+        } */
+        div p{
+            color: red;
+            background-color: yellow !important;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Cascade Algorithm in CSS3</h1>
+
+    <p>Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm is split into 4 distinct stages.</p>
+    <ol>
+        <li>Position and order of appearance: The order of which your CSS rules appear</li>
+        <li>Specificity: an algorithm which determines which CSS selector has strongest match.
+
+            <p>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</p>
+        </li>
+        <li>Origin: the order of when CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS.</li>
+        <li>Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type</li>
+    </ol>
+
+
+    <div>
+        <p class="red yellow blue" [data-x]="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi, ea iusto accusantium laudantium minima consequatur vel est, ex minus optio, voluptate natus.</p>
+    </div>
+</body>
+</html>
