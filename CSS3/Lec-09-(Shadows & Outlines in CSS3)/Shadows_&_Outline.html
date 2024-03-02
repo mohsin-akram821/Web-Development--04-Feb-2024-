@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows in CSS3</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* Box Shadow. */
+        .box{
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            box-shadow: 5px 5px 2px 5px red inset;
+        }
+
+        /* Text Shadow. */
+        .text{
+            border: 5px solid blue;
+            text-shadow: 2px 2px 2px rgb(35, 152, 70);
+        }
+
+        /* Outline in CSS3 */
+        .outline{
+            border: 3px solid blue;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            color: red;
+            outline: 5px solid black;
+            outline-offset: 10px;
+            border-radius: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is div in which box shawdow is applied.
+    </div>
+
+    <div class="text">
+        This is text shadow for preview.
+    </div>
+    <pre>
+
+
+
+        <div class="outline">
+            This is my last div for this class.
+        </div>
+    </pre>
+</body>
+</html>
